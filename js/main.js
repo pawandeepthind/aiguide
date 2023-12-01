@@ -11,6 +11,8 @@ function askQuestion() {
     askQuestionToGuide(question.value, wikiLink, context);
 }
 function askQuestionToGuide(question, wikiLink, context) {
+    const apiKey = ''; // Replace with your actual API key
+    const endpoint = ''; // API endpoint
     const requestData = {
         model: 'gpt-3.5-turbo',
         messages: [
@@ -27,7 +29,7 @@ function askQuestionToGuide(question, wikiLink, context) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': `Bearer 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`,
+            'Authorization': 'Bearer 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',
         },
         body: JSON.stringify(requestData),
     })
