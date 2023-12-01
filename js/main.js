@@ -29,7 +29,7 @@ function askQuestionToGuide(question, wikiLink, context) {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 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',
+            'Authorization': 'Bearer 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',
         },
         body: JSON.stringify(requestData),
     })
