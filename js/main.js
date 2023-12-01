@@ -11,7 +11,7 @@ function askQuestion() {
     askQuestionToGuide(question.value, wikiLink, context);
 }
 function askQuestionToGuide(question, wikiLink, context) {
-    const apiKey = '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'; // Replace with your actual API key
+    const apiKey = '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'; // Replace with your actual API key
     const endpoint = 'https://api.openai.com/v1/chat/completions'; // API endpoint
     const requestData = {
         model: 'gpt-3.5-turbo',
