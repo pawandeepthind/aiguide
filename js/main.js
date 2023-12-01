@@ -11,8 +11,8 @@ function askQuestion() {
     askQuestionToGuide(question.value, wikiLink, context);
 }
 function askQuestionToGuide(question, wikiLink, context) {
-    const apiKey = ''; // Replace with your actual API key
-    const endpoint = ''; // API endpoint
+    const apiKey = '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'; // Replace with your actual API key
+    const endpoint = 'https://api.openai.com/v1/chat/completions'; // API endpoint
     const requestData = {
         model: 'gpt-3.5-turbo',
         messages: [
@@ -25,11 +25,11 @@ function askQuestionToGuide(question, wikiLink, context) {
         n: 1,
         temperature: 0.2,
     };
-    fetch('https://api.openai.com/v1/chat/completions', {
+    fetch(endpoint, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
-            'Authorization': 'Bearer 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',
+            'Authorization': `Bearer ${apiKey}`,
         },
         body: JSON.stringify(requestData),
     })
