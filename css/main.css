@@ -1,0 +1,66 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+}
+
+h1, p, img {
+    margin: 10px;
+}
+
+.container {
+    min-height: 100vh;
+}
+
+.left-content {
+    vertical-align: top;
+    background-color: whitesmoke;
+    width: 60%;
+}
+
+.right-content {
+    vertical-align: top;
+    background-color: lightgray;
+    padding: 20px;
+}
+
+#question {
+    height: 45px;
+    width: 70%;
+    border-radius: 7px;
+}
+
+#askbutton {
+    height: 50px;
+    width: 27%;
+    background-color: black;
+    color: white;
+}
+
+.chatmessage {
+    min-height: 45px;
+    padding: 10px;
+    margin-top: 4px;
+    border-radius: 15px;
+}
+
+.you {
+    color: gray;
+    background-color: lavender;
+    border: 1px solid grey;
+    text-align: right;
+}
+
+.you:hover {
+    color: black;
+}
+
+.guide {
+    color: gray;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+    text-align: left;
+}
+
+.guide:hover {
+    color: black;
+}
